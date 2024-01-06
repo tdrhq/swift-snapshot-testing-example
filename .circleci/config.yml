@@ -13,6 +13,7 @@ jobs:
       - run: bundle install
       - run:
           name: Fastlane
+          no_output_timeout: 30m
           command: bundle exec fastlane $FASTLANE_LANE
       - store_artifacts:
           path: output
@@ -30,6 +31,7 @@ jobs:
       - run: bundle install
       - run:
           name: Fastlane
+          no_output_timeout: 30m
           command: bundle exec fastlane $FASTLANE_LANE
       - store_artifacts:
           path: output
