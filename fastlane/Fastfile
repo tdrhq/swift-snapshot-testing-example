@@ -26,7 +26,7 @@ platform :ios do
 end
 
 lane :tests do
-  run_tests(scheme: "SimpleProjectTests", devices: ["iPhone 6s"], max_concurrent_simulators: 1, 
+  run_tests(scheme: "SimpleProjectTests", devices: ["iPhone SE (3rd generation)"], max_concurrent_simulators: 1, 
 	concurrent_workers: 1,
 	disable_concurrent_testing: true)
 end
