@@ -5,7 +5,7 @@ version: 2.1
 jobs:
   build-and-test:
     macos:
-      xcode: 14.2
+      xcode: 15.0.1
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: tests
