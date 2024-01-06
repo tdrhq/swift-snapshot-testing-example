@@ -8,6 +8,7 @@ jobs:
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: tests
+    resource_class: large
     steps:
       - checkout
       - run: bundle install
