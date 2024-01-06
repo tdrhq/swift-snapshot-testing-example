@@ -9,7 +9,7 @@ jobs:
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: tests
-    resource_class: large
+    resource_class: macos.m1.large.gen1
     steps:
       - checkout
       - run: bundle install
