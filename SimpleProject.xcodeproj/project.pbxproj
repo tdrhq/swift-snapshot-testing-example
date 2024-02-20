@@ -614,8 +614,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tdrhq/swift-snapshot-testing";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.2;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

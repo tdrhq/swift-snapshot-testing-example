@@ -5,8 +5,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tdrhq/swift-snapshot-testing",
       "state" : {
-        "revision" : "c466812aa2e22898f27557e2e780d3aad7a27203",
-        "version" : "1.8.2"
+        "branch" : "main",
+        "revision" : "20c208f38f17b6b3a7dc3ad0b33888b4a8444b6b"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
       }
     }
   ],
