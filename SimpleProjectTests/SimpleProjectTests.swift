@@ -6,7 +6,7 @@
 //
 
 import XCTest
-//import SnapshotTesting
+import SnapshotTesting
 @testable import SimpleProject
 
 final class SimpleProjectTests: XCTestCase {
