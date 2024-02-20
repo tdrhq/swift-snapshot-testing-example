@@ -1,2 +1,6 @@
 fastlane/report.xml
 fastlane/test_output
+
+# For Screenshotbot, we shouldn't commit the snapshots into
+# the repository. 
+__Snapshots__
