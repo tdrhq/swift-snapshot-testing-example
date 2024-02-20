@@ -14,8 +14,6 @@
 		AF5E1F922B485E1E0093784D /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */; };
 		AF5E1F9C2B485E1E0093784D /* SimpleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9B2B485E1E0093784D /* SimpleProjectUITests.swift */; };
 		AF5E1F9E2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9D2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift */; };
-		AF8DD5132B852F2600139ED2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF8DD5122B852F2600139ED2 /* SnapshotTesting */; };
-		AF8DD5162B852F8700139ED2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF8DD5152B852F8700139ED2 /* SnapshotTesting */; };
 		AF8DD5182B85304800139ED2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF8DD5172B85304800139ED2 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8DD5132B852F2600139ED2 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8DD5162B852F8700139ED2 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +154,6 @@
 			);
 			name = SimpleProject;
 			packageProductDependencies = (
-				AF8DD5122B852F2600139ED2 /* SnapshotTesting */,
 			);
 			productName = SimpleProject;
 			productReference = AF5E1F7D2B485E1C0093784D /* SimpleProject.app */;
@@ -200,7 +195,6 @@
 			);
 			name = SimpleProjectUITests;
 			packageProductDependencies = (
-				AF8DD5152B852F8700139ED2 /* SnapshotTesting */,
 			);
 			productName = SimpleProjectUITests;
 			productReference = AF5E1F972B485E1E0093784D /* SimpleProjectUITests.xctest */;
@@ -627,16 +621,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AF8DD5122B852F2600139ED2 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
-		AF8DD5152B852F8700139ED2 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
 		AF8DD5172B85304800139ED2 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
