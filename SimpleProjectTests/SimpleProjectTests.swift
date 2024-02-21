@@ -29,6 +29,10 @@ final class SimpleProjectTests: XCTestCase {
         let view = ContentView()
         assertSnapshot(matching: view, as: .image)
     }
+    func testDataSnapshot() throws {
+        let data = "foobar"
+        assertSnapshot(matching: data, as: .dump)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
