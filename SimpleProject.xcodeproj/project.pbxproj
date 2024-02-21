@@ -14,6 +14,7 @@
 		AF5E1F922B485E1E0093784D /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */; };
 		AF5E1F9C2B485E1E0093784D /* SimpleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9B2B485E1E0093784D /* SimpleProjectUITests.swift */; };
 		AF5E1F9E2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9D2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift */; };
+		AF8DD5182B85304800139ED2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF8DD5172B85304800139ED2 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8DD5182B85304800139ED2 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,7 @@
 				AF5E1F902B485E1E0093784D /* SimpleProjectTests */,
 				AF5E1F9A2B485E1E0093784D /* SimpleProjectUITests */,
 				AF5E1F7E2B485E1C0093784D /* Products */,
+				AF8DD5142B852F8700139ED2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +130,13 @@
 			path = SimpleProjectUITests;
 			sourceTree = "<group>";
 		};
+		AF8DD5142B852F8700139ED2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,8 @@
 			dependencies = (
 			);
 			name = SimpleProject;
+			packageProductDependencies = (
+			);
 			productName = SimpleProject;
 			productReference = AF5E1F7D2B485E1C0093784D /* SimpleProject.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +173,9 @@
 				AF5E1F8F2B485E1E0093784D /* PBXTargetDependency */,
 			);
 			name = SimpleProjectTests;
+			packageProductDependencies = (
+				AF8DD5172B85304800139ED2 /* SnapshotTesting */,
+			);
 			productName = SimpleProjectTests;
 			productReference = AF5E1F8D2B485E1E0093784D /* SimpleProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -179,6 +194,8 @@
 				AF5E1F992B485E1E0093784D /* PBXTargetDependency */,
 			);
 			name = SimpleProjectUITests;
+			packageProductDependencies = (
+			);
 			productName = SimpleProjectUITests;
 			productReference = AF5E1F972B485E1E0093784D /* SimpleProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = AF5E1F742B485E1C0093784D;
+			packageReferences = (
+				AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = AF5E1F7E2B485E1C0093784D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tdrhq/swift-snapshot-testing";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF8DD5172B85304800139ED2 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8DD5112B852F2600139ED2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF5E1F752B485E1C0093784D /* Project object */;
 }
