@@ -31,3 +31,22 @@ lane :tests do
 	concurrent_workers: 1,
 	disable_concurrent_testing: true)
 end
+
+lane :fetch_screenshotbot do
+    sh "curl https://cdn.screenshotbot.io/recorder.sh | sh"
+end
+
+lane :screenshotbot_upload_all do
+  # For each __Snapshots__ directory, load it to screenshotbot
+  Dir.glob("../**/__Snapshots__/").each do |dir|
+    channel_name = dir[3..-("/__Snapshots__/".length + 1)]
+    sh "~/screenshotbot/recorder --channel #{channel_name} --directory #{dir} --recursive"
+  end
+end
+
+lane :screenshotbot_ci do
+  tests
+  fetch_screenshotbot
+  screenshotbot_upload_all
+end
+
