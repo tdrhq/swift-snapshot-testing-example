@@ -21,6 +21,30 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 
 
+### fetch_screenshotbot
+
+```sh
+[bundle exec] fastlane fetch_screenshotbot
+```
+
+
+
+### screenshotbot_upload_all
+
+```sh
+[bundle exec] fastlane screenshotbot_upload_all
+```
+
+
+
+### screenshotbot_ci
+
+```sh
+[bundle exec] fastlane screenshotbot_ci
+```
+
+
+
 ----
 
 
