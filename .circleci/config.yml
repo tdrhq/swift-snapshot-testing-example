@@ -8,7 +8,7 @@ jobs:
       xcode: 15.0.1
     environment:
       FL_OUTPUT_DIR: output
-      FASTLANE_LANE: tests
+      FASTLANE_LANE: screenshotbot_ci
     resource_class: macos.m1.large.gen1
     steps:
       - checkout
