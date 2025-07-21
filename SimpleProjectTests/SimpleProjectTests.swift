@@ -29,6 +29,22 @@ final class SimpleProjectTests: XCTestCase {
         let view = ContentView()
         assertSnapshot(matching: view, as: .image)
     }
+
+    func testEditBoxWithButton() throws {
+        let view = VStack {
+            TextField("Enter text", text: .constant(""))
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            Button("Submit") {
+                // Button action
+            }
+            .padding()
+        }
+        assertSnapshot(matching: view, as: .image)
+    }
+
+
+
     func testDataSnapshot() throws {
         let data = "foobar"
         assertSnapshot(matching: data, as: .dump)
