@@ -41,7 +41,7 @@ final class SimpleProjectTests: XCTestCase {
             }
             .padding()
         }
-        assertSnapshot(matching: view, as: .image)
+        assertSnapshot(matching: view, as: .image(on: .iPhone13)
     }
 
 
