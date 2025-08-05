@@ -10,6 +10,7 @@
 		AF5E1F812B485E1C0093784D /* SimpleProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F802B485E1C0093784D /* SimpleProjectApp.swift */; };
 		AF5E1F832B485E1C0093784D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F822B485E1C0093784D /* ContentView.swift */; };
 		AF5E1F852B485E1E0093784D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5E1F842B485E1E0093784D /* Assets.xcassets */; };
+		AFLOGIN12345678901234567 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFLOGIN98765432109876543 /* LoginView.swift */; };
 		AF5E1F882B485E1E0093784D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5E1F872B485E1E0093784D /* Preview Assets.xcassets */; };
 		AF5E1F922B485E1E0093784D /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */; };
 		AF5E1F9C2B485E1E0093784D /* SimpleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9B2B485E1E0093784D /* SimpleProjectUITests.swift */; };
@@ -39,6 +40,7 @@
 		AF5E1F802B485E1C0093784D /* SimpleProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectApp.swift; sourceTree = "<group>"; };
 		AF5E1F822B485E1C0093784D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF5E1F842B485E1E0093784D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFLOGIN98765432109876543 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF5E1F872B485E1E0093784D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5E1F8D2B485E1E0093784D /* SimpleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectTests.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				AF5E1F802B485E1C0093784D /* SimpleProjectApp.swift */,
 				AF5E1F822B485E1C0093784D /* ContentView.swift */,
+				AFLOGIN98765432109876543 /* LoginView.swift */,
 				AF5E1F842B485E1E0093784D /* Assets.xcassets */,
 				AF5E1F862B485E1E0093784D /* Preview Content */,
 			);
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5E1F832B485E1C0093784D /* ContentView.swift in Sources */,
+				AFLOGIN12345678901234567 /* LoginView.swift in Sources */,
 				AF5E1F812B485E1C0093784D /* SimpleProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
