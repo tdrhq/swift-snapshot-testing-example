@@ -33,6 +33,11 @@ final class SimpleProjectTests: XCTestCase {
         let data = "foobar"
         assertSnapshot(matching: data, as: .dump)
     }
+    
+    func testLoginViewSnapshot() throws {
+        let loginView = LoginView()
+        assertSnapshot(matching: loginView, as: .image)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
