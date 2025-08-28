@@ -19,14 +19,7 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
         done < <(find "$CI_RESULT_BUNDLE_PATH" -name "__Snapshots__" -type d -print0 2>/dev/null)
     fi
     
-    # Search in derived data path if available
-    if [[ -n "$CI_DERIVED_DATA_PATH" ]]; then
-        if find "$CI_DERIVED_DATA_PATH" -name "__Snapshots__" -type d 2>/dev/null | head -1 >/dev/null; then
-            while IFS= read -r -d '' dir; do
-                SNAPSHOT_DIRS+=("$dir")
-            done < <(find "$CI_DERIVED_DATA_PATH" -name "__Snapshots__" -type d -print0 2>/dev/null)
-        fi
-    fi
+    # Skip derived data path - contains dependency snapshots, not our app snapshots
     
     # Search in current working directory as fallback
     if find . -name "__Snapshots__" -type d 2>/dev/null | head -1 >/dev/null; then
