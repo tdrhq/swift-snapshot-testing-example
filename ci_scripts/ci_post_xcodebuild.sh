@@ -28,7 +28,21 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
         done < <(find . -name "__Snapshots__" -type d -print0 2>/dev/null)
     fi
     
-    find ..
+    # Debug: List contents of XCResult bundle to see what's available
+    echo "📋 Contents of XCResult bundle:"
+    if [[ -d "$CI_RESULT_BUNDLE_PATH" ]]; then
+        find "$CI_RESULT_BUNDLE_PATH" -type f -name "*.png" -o -name "*.txt" -o -name "*snapshot*" | head -20
+        echo "📂 Directory structure in XCResult bundle:"
+        find "$CI_RESULT_BUNDLE_PATH" -type d -name "*Snapshot*" -o -name "*Test*" | head -10
+        echo "📁 All directories in XCResult bundle:"
+        find "$CI_RESULT_BUNDLE_PATH" -type d | head -15
+    else
+        echo "❌ XCResult bundle not found at: $CI_RESULT_BUNDLE_PATH"
+    fi
+    
+    # Debug: List project directory contents
+    echo "📂 Project directory contents:"
+    find .. -maxdepth 3 -name "*Snapshot*" -o -name "*Test*" 2>/dev/null | head -10
     
     if [ ${#SNAPSHOT_DIRS[@]} -gt 0 ]; then
         echo "📸 Found ${#SNAPSHOT_DIRS[@]} snapshot directories:"
