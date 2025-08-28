@@ -58,7 +58,7 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
             # Extract channel name from directory path
             channel_name=$(echo "$dir" | sed 's|.*/\([^/]*\)/__Snapshots__.*|\1|')
             echo "  📤 Uploading $dir as channel: $channel_name"
-            ~/screenshotbot/recorder --channel "$channel_name" --directory "$dir" --recursive
+            ~/screenshotbot/recorder --channel "$channel_name" --directory "$dir" --recursive --main-branch main
         done
         
         echo "✅ Screenshotbot upload completed successfully!"
