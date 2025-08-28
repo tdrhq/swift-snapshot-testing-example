@@ -41,6 +41,9 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
             echo "  - $dir"
         done
         
+        # Change to project root directory for fastlane operations
+        cd ..
+        
         # Install bundler dependencies without sudo
         echo "📦 Installing Ruby dependencies..."
         bundle install --path vendor/bundle --deployment || bundle install --path vendor/bundle
