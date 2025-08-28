@@ -35,6 +35,8 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
         done < <(find . -name "__Snapshots__" -type d -print0 2>/dev/null)
     fi
     
+    find .
+    
     if [ ${#SNAPSHOT_DIRS[@]} -gt 0 ]; then
         echo "📸 Found ${#SNAPSHOT_DIRS[@]} snapshot directories:"
         for dir in "${SNAPSHOT_DIRS[@]}"; do
