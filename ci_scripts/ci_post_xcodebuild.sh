@@ -41,9 +41,9 @@ if [[ -n "$CI_RESULT_BUNDLE_PATH" && -d "$CI_RESULT_BUNDLE_PATH" ]]; then
             echo "  - $dir"
         done
         
-        # Install bundler dependencies
+        # Install bundler dependencies without sudo
         echo "📦 Installing Ruby dependencies..."
-        bundle install
+        bundle install --path vendor/bundle --deployment || bundle install --path vendor/bundle
         
         # Fetch screenshotbot
         echo "⬇️ Fetching Screenshotbot recorder..."
