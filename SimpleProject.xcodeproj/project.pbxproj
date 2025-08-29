@@ -10,12 +10,12 @@
 		AF5E1F812B485E1C0093784D /* SimpleProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F802B485E1C0093784D /* SimpleProjectApp.swift */; };
 		AF5E1F832B485E1C0093784D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F822B485E1C0093784D /* ContentView.swift */; };
 		AF5E1F852B485E1E0093784D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5E1F842B485E1E0093784D /* Assets.xcassets */; };
-		AFLOGIN12345678901234567 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFLOGIN98765432109876543 /* LoginView.swift */; };
 		AF5E1F882B485E1E0093784D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5E1F872B485E1E0093784D /* Preview Assets.xcassets */; };
 		AF5E1F922B485E1E0093784D /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */; };
 		AF5E1F9C2B485E1E0093784D /* SimpleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9B2B485E1E0093784D /* SimpleProjectUITests.swift */; };
 		AF5E1F9E2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E1F9D2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift */; };
 		AF8DD5182B85304800139ED2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF8DD5172B85304800139ED2 /* SnapshotTesting */; };
+		AFLOGIN12345678901234567 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFLOGIN98765432109876543 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +40,13 @@
 		AF5E1F802B485E1C0093784D /* SimpleProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectApp.swift; sourceTree = "<group>"; };
 		AF5E1F822B485E1C0093784D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF5E1F842B485E1E0093784D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFLOGIN98765432109876543 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF5E1F872B485E1E0093784D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5E1F8D2B485E1E0093784D /* SimpleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5E1F912B485E1E0093784D /* SimpleProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectTests.swift; sourceTree = "<group>"; };
 		AF5E1F972B485E1E0093784D /* SimpleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5E1F9B2B485E1E0093784D /* SimpleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectUITests.swift; sourceTree = "<group>"; };
 		AF5E1F9D2B485E1E0093784D /* SimpleProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFLOGIN98765432109876543 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,7 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleProject/Preview Content\"";
-				DEVELOPMENT_TEAM = LFNJ2T7JZ6;
+				DEVELOPMENT_TEAM = HQ25CUJ52L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleProject/Preview Content\"";
-				DEVELOPMENT_TEAM = LFNJ2T7JZ6;
+				DEVELOPMENT_TEAM = HQ25CUJ52L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -488,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -507,7 +507,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProjectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -527,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProjectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example.tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -545,7 +545,7 @@
 				DEVELOPMENT_TEAM = LFNJ2T7JZ6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProjectUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example.uitests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +563,7 @@
 				DEVELOPMENT_TEAM = LFNJ2T7JZ6;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdrhq.test.SimpleProjectUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.screenshotbot.swift-snapshot-testing-example.uitests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
