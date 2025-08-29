@@ -10,4 +10,4 @@ env
 curl https://screenshotbot.io/recorder.sh | sh
 
 # Update commit graph for better git performance
-~/screenshotbot/recorder ci upload-commit-graph
+~/screenshotbot/recorder ci upload-commit-graph --main-branch main
