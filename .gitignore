@@ -1,6 +1,10 @@
 fastlane/report.xml
 fastlane/test_output
 
+# Xcode user-specific files
+*.xcuserdata
+*.xcuserdatad
+
 # For Screenshotbot, we shouldn't commit the snapshots into
 # the repository. 
 **/__Snapshots__/**/*.png
