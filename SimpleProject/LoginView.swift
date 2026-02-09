@@ -17,7 +17,7 @@ struct LoginView: View {
             VStack(spacing: 8) {
                 Image(systemName: "person.circle")
                     .font(.system(size: 80))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.green)
                 
                 Text("Welcome Back")
                     .font(.largeTitle)
@@ -61,7 +61,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
-                    .background(username.isEmpty || password.isEmpty ? Color.gray : Color.blue)
+                    .background(username.isEmpty || password.isEmpty ? Color.gray : Color.green)
                     .cornerRadius(10)
             }
             .disabled(username.isEmpty || password.isEmpty)
@@ -72,7 +72,7 @@ struct LoginView: View {
             }) {
                 Text("Forgot Password?")
                     .font(.footnote)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.green)
             }
             .padding(.top, 8)
             
