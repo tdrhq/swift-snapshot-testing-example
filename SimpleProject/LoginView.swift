@@ -10,14 +10,18 @@ import SwiftUI
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
+
+    private var isSignInDisabled: Bool {
+        username.isEmpty || password.isEmpty
+    }
     
     var body: some View {
         VStack(spacing: 24) {
             // Logo/Title
             VStack(spacing: 8) {
-                Image(systemName: "person.circle")
+                Image(systemName: "person.circle.fill")
                     .font(.system(size: 80))
-                    .foregroundColor(.blue)
+                    .foregroundStyle(Brand.primaryGradient)
                 
                 Text("Welcome Back")
                     .font(.largeTitle)
@@ -37,9 +41,9 @@ struct LoginView: View {
                         .foregroundColor(.primary)
                     
                     TextField("Enter your username", text: $username)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
+                        .brandField()
                 }
                 
                 VStack(alignment: .leading, spacing: 6) {
@@ -48,7 +52,7 @@ struct LoginView: View {
                         .foregroundColor(.primary)
                     
                     SecureField("Enter your password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .brandField()
                 }
             }
             
@@ -58,21 +62,27 @@ struct LoginView: View {
             }) {
                 Text("Sign In")
                     .font(.headline)
-                    .foregroundColor(.white)
+                    .foregroundColor(isSignInDisabled ? Color.secondary : .white)
                     .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .background(username.isEmpty || password.isEmpty ? Color.gray : Color.blue)
-                    .cornerRadius(10)
+                    .frame(height: Brand.controlHeight)
+                    .background {
+                        if isSignInDisabled {
+                            Brand.disabledFill
+                        } else {
+                            Brand.primaryGradient
+                        }
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: Brand.buttonRadius))
             }
-            .disabled(username.isEmpty || password.isEmpty)
+            .disabled(isSignInDisabled)
             
             // Forgot Password Link
             Button(action: {
                 // Forgot password action would go here
             }) {
                 Text("Forgot Password?")
-                    .font(.footnote)
-                    .foregroundColor(.blue)
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.accentColor)
             }
             .padding(.top, 8)
             
