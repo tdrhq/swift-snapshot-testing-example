@@ -28,6 +28,7 @@
 		AFCHA7000000000000000014 /* ChatComponentSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCHA7000000000000000013 /* ChatComponentSnapshotTests.swift */; };
 		AFCHA7000000000000000016 /* LocalizationSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCHA7000000000000000015 /* LocalizationSnapshotTests.swift */; };
 		AFCHA7000000000000000018 /* DynamicTypeSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCHA7000000000000000017 /* DynamicTypeSnapshotTests.swift */; };
+		AFBRAND000000000000000B1 /* BrandTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBRAND000000000000000A1 /* BrandTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		AFCHA7000000000000000013 /* ChatComponentSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatComponentSnapshotTests.swift; sourceTree = "<group>"; };
 		AFCHA7000000000000000015 /* LocalizationSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSnapshotTests.swift; sourceTree = "<group>"; };
 		AFCHA7000000000000000017 /* DynamicTypeSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeSnapshotTests.swift; sourceTree = "<group>"; };
+		AFBRAND000000000000000A1 /* BrandTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		AF5E1F7F2B485E1C0093784D /* SimpleProject */ = {
 			isa = PBXGroup;
 			children = (
+				AFBRAND000000000000000A1 /* BrandTheme.swift */,
 				AFCHA7000000000000000001 /* ChatModels.swift */,
 				AFCHA7000000000000000003 /* Strings.swift */,
 				AFCHA7000000000000000005 /* ChatSampleData.swift */,
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBRAND000000000000000B1 /* BrandTheme.swift in Sources */,
 				AFCHA7000000000000000002 /* ChatModels.swift in Sources */,
 				AFCHA7000000000000000004 /* Strings.swift in Sources */,
 				AFCHA7000000000000000006 /* ChatSampleData.swift in Sources */,
