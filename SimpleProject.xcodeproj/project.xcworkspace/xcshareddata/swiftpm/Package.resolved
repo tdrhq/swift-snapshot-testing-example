@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tdrhq/swift-snapshot-testing",
       "state" : {
-        "revision" : "75d786fdaa7a0d0aef3ab0e04a7e704cc733c5b4",
-        "version" : "1.19.0-sb"
+        "revision" : "8ca0fc12c57279cc3ec2b3c43ea75f64da99330f",
+        "version" : "1.19.1-sb"
       }
     },
     {
