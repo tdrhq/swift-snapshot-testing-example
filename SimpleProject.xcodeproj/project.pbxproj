@@ -667,7 +667,7 @@
 			repositoryURL = "https://github.com/tdrhq/swift-snapshot-testing";
 			requirement = {
 				kind = exactVersion;
-				version = "1.19.0-sb";
+				version = "1.19.1-sb";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
